@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Prakhar</title>
+    <style>
+        /* Fullscreen layout */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #282c34;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Text styling */
+        #prakhar {
+            position: absolute;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #61dafb;
+            animation: float 8s infinite linear;
+        }
+
+        /* Keyframes for smooth animation */
+        @keyframes float {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(300px, -200px);
+            }
+            50% {
+                transform: translate(-200px, 300px);
+            }
+            75% {
+                transform: translate(-300px, -300px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="prakhar">Prakhar</div>
+</body>
+</html>
